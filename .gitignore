@@ -1,5 +1,21 @@
-.venv
+# Ignore secrets
 .env
-*.sqlite3
-*.db
+*.env
+secret.*
+config.py
+
+# Ignore logs and DB
 *.log
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Env
+venv/
+.venv/
+
+# IDEs
+.idea/
+.vscode/
