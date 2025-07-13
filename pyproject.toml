@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'  # Fixed: Added '$' and closing quote
+extend-exclude = '''
+(\.eggs|\.git|\.hg|\.mypy_cache|\.tox|\.venv|_build|buck-out|build|dist)
+'''  # Removed newlines/comments and leading/trailing slashes
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
